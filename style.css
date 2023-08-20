@@ -1,127 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
 html {
-  background-color: rgb(194, 194, 185);
-  font-family: Arial;
+  background-color: #1f6f78;
+  font-family: 'Oxygen', Arial;
 }
 
-  article {
-    padding: 10px 65px 45px;
-    width: max-content;
-    height: 100%;
-    margin: 160px auto 35px;
-    background-color: rgb(235, 150, 110);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 4px 8px rgb(92, 90, 90);
-  }
+article {
+  padding: 10px 65px 45px;
+  width: max-content;
+  height: 100%;
+  margin: 160px auto 35px;
+  background-color: #3baea0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 8px #7fe0d7;
+  border-radius: 0.5rem;
+}
 
-  body {
-    margin: 0;
-  }
+body {
+  margin: 0;
+}
 
-  body > header {
-    height: 100px;
-    width: 100%;
-    padding: 10px 0;
-    margin-bottom: 15px;
-    background-color: rgb(10, 202, 42);
-    border-radius: 0 0 50px 50px;
-    box-shadow: 4px 4px 8px rgb(92, 90, 90);
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  }
+body>header {
+  height: 100px;
+  width: 100%;
+  background-color: #118a7e;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 2px 2px 8px #7fe0d7;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
 
-  body > footer {
-    background-color: rgb(43, 41, 41);
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-  }
+  padding-bottom: 10px;
+}
 
-  h1 {
-    text-shadow: 3px 4px 4px rgb(116, 114, 114);
-    text-align: center;
-    color: white;
-  }
+#logo {
+  height: 100px;
+}
 
-  h2 {
-    margin: 20px ;
-    text-shadow: 2px 2px 3px rgb(194, 191, 191)
-  }
+#companyName {
+  margin: 0;
+  color: #f2f7f7;
+  text-shadow: 2px 2px 4px #7fe0d7;
+  position: absolute;
+  bottom: 0;
+  left: 8.4px;
+}
 
-  #copyright {
-    color: white;
-    text-align: center;
-  }
+#completeLogo {
+  position: relative;
+  width: max-content;
+  margin-left: 40px;
+}
 
-  input {
-    margin: 3px;
-    width: 200px;
-    box-shadow: 4px 4px 8px rgb(92, 90, 90);
-  }
+body>footer {
+  background-color: rgb(43, 41, 41);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
 
-  input:hover {
-    color:rgb(255, 255, 255);
-    background-color: rgb(71, 71, 241);
-    text-shadow: 1px 2px 2px black;
-  }
+h1 {
+  text-shadow: 2px 2px 4px #7fe0d7;
+  text-align: center;
+  color: #f2f7f7;
+  flex: 1;
+  margin-right: 195.283px;
+  text-decoration: underline;
+}
 
-  input:hover::placeholder { /* NEFUNGUJE */
-    color:rgb(255, 255, 255);
-  }
+h2 {
+  margin: 20px;
+  text-shadow: 2px 2px 4px #7fe0d7;
+}
 
-  button {
-    margin: 3px;
-    box-shadow: 4px 4px 8px rgb(92, 90, 90);
-  }
+#copyright {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5px;
+}
 
-  #saveButton {
-    font-weight: bold;
-    margin-top: 25px;
-  }
+input {
+  margin: 5px;
+  width: 250px;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 1px 1px 4px #7fe0d7;
+}
 
-  button:hover {
-    color:rgb(255, 255, 255);
-    background-color: rgb(71, 71, 241);
-    text-shadow: 1px 2px 2px black;
-    border-radius: 5px;
-  }
+input:hover {
+  color: #ffffff;
+  background-color: #1f6f78;
+  text-shadow: 1px 2px 2px black;
+}
+
+::placeholder {
+  font-family: 'Oxygen', Arial;
+}
+
+input:hover::placeholder {
+  /* Nefunguje ve všech prohlížečích */
+  color: #ffffff;
+}
+
+button {
+  margin: 3px;
+  font-family: 'Oxygen', Arial;
+  box-shadow: 1px 1px 2px #7fe0d7;
+
+}
+
+#saveButton {
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #1f6f78;
+  text-shadow: 1px 2px 2px black;
+  border-radius: 5px;
+}
 
 table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin: 5px auto 90px;
-    text-align: center;
-    background-color: rgb(216, 213, 208);
-    box-shadow: 4px 4px 8px rgb(92, 90, 90);
+  font-size: 1.3rem;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 5px auto 90px;
+  text-align: center;
+  background-color: #3baea0;
+  text-shadow: 1px 1px 1px #6f928f;
+  box-shadow: 2px 2px 8px #7fe0d7;
 }
 
 th {
-    padding: 7px 0;
-    text-decoration: underline;
+  padding: 7px 0;
+  text-decoration: underline;
+  background-color:#118a7e;
 }
 
 td {
-    border: 1px solid black;
-    padding: 5px 20px;
+  border: 1px solid black;
+  padding: 5px 20px;
 }
 
 #deleteButton {
-    color: rgb(231, 25, 25);
-    text-shadow: 1px 1px 3px rgb(136, 130, 130);
-    font-weight: bold;
+  color: rgb(231, 25, 25);
+  text-shadow: 1px 1px 3px rgb(136, 130, 130);
+  font-weight: bold;
 }
 
 #deleteButton:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(231, 25, 25);
-    text-shadow: 1px 2px 2px black;
-    border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(231, 25, 25);
+  text-shadow: 1px 2px 2px black;
+  border-radius: 5px;
 }
 
+ul {
+  list-style:none;
+  flex-direction: column;
+  font-size: 1.3rem;
 
+}
+
+#detailsCard {
+  padding: 20px 50px;
+  width: max-content;
+  height: 100%;
+  margin: 50px auto 100px;
+  background-color: #3baea0;
+  display: flex;
+  box-shadow: 2px 2px 8px #7fe0d7;
+  text-shadow: 1px 1px 1px #6f928f;
+  border-radius: 0.5rem;
+}
+
+#avatar {
+  height: 150px;
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px #7fe0d7;
+}
+
+#cross {
+  height: 50px;
+  position: relative;
+  top: -20px;
+  right: -50px;
+  cursor: grab;
+}
+
+#insuranceTypeButtons {
+  flex-direction: column;
+}
 
